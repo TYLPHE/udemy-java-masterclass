@@ -8,6 +8,24 @@ public class BankAccountInstructor {
     private String customerEmail;
     private String customerPhone;
 
+    public BankAccountInstructor(String customerName, String customerEmail, String customerPhone) {
+        this("9999", 100.55, customerName, customerEmail, customerPhone);
+    }
+
+    public BankAccountInstructor() {
+        this("56789", 300, "Tom T", "tom@test.com", "123321123");
+        System.out.println("Empty constructor called");
+    }
+
+    public BankAccountInstructor(String number, double balance, String customerName, String email, String phone) {
+        System.out.println("Account constructor with parameters called");
+        setNumber(number); // not as good because inheritance errors. set field values directly
+        this.balance = balance;
+        this.customerName = customerName;
+        customerEmail = email;
+        customerPhone = phone;
+    }
+    
     public void depositFunds(double depositAmount) {
         balance += depositAmount;
         System.out.println("Deposit of $" + depositAmount + "Made. New balance is " +
