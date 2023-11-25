@@ -1,6 +1,6 @@
 package ConstructorChallenge;
 
-public class Customer {
+class Customer {
     private String name;
     private double creditLimit;
     private String email;
