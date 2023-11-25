@@ -35,5 +35,6 @@ public class Challenge2InstructorVersion {
         } else {
             System.out.println("No valid data entered.");
         }
+        scanner.close();
     }
 }

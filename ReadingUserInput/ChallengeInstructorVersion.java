@@ -24,5 +24,6 @@ public class ChallengeInstructorVersion {
         }
 
         System.out.println("The sum: " + sum);
+        scanner.close();
     }
 }

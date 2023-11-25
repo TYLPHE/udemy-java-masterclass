@@ -51,7 +51,7 @@ public class Main {
                 System.out.println("Characters not allowed. Try again.");
             }
         } while (!validDOB);
-
+        scanner.close();
         return "You are " + age + " years old";
     }
 
