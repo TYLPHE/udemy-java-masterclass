@@ -1,9 +1,7 @@
-package InheritanceChallenge;
-
 public class SalariedEmployee {
     
-    protected double annualSalary;
-    protected boolean isRetired;
+    public double annualSalary;
+    public boolean isRetired;
 
     public SalariedEmployee() {
         this(50000.00, false);
@@ -13,7 +11,7 @@ public class SalariedEmployee {
         this.isRetired = isRetired;
     }
 
-    protected void retire() {
+    public void retire() {
         isRetired = isRetired ? false : true;
     }
 

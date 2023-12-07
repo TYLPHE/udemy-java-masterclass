@@ -1,9 +1,5 @@
 package Extra;
 
-import java.util.HashMap;
-import java.util.Map;
-import java.util.TreeMap;
-
 public class StringMethods {
     public static void main(String[] args) {
         // str.indexOf()
@@ -50,29 +46,53 @@ public class StringMethods {
 //            }
 //        }
 //
-        char[] vowels = {'a', 'e', 'i', 'o', 'u'};
-        for (char i : vowels) {
-            System.out.println(i);
-        }
+//        char[] vowels = {'a', 'e', 'i', 'o', 'u'};
+//        for (char i : vowels) {
+//            System.out.println(i);
+//        }
+//
+//        Map<String, String> firstMap = new HashMap<>();
+//        firstMap.put("first", "1st");
+//        firstMap.put("second", "2nd");
+//        firstMap.put("third", "3rd");
+//
+//        for (String string : firstMap.keySet()) {
+//            System.out.println(string); // not printed in order (HashMap)
+//        }
+//
+//        Map<Integer, Character> secondMap = new TreeMap<>();
+//        secondMap.put(1, 'a');
+//        secondMap.put(2, 'b');
+//        secondMap.put(3, 'c');
+//
+//        for (char i : secondMap.values()) {
+//            System.out.println(i); // printed in order (TreeMap)
+//        }
 
-        Map<String, String> firstMap = new HashMap<>();
-        firstMap.put("first", "1st");
-        firstMap.put("second", "2nd");
-        firstMap.put("third", "3rd");
+        // substring()
+//        String str = "substring";
+//        System.out.println(str.substring(2, 5)); // "bst"
 
-        for (String string : firstMap.keySet()) {
-            System.out.println(string); // not printed in order (HashMap)
-        }
+        // split()
+//        String str = "Split this sentence";
+//        String[] arrayOfWords = str.split(" ");
+//        for (String string : arrayOfWords) {
+//            System.out.println(string);
+//        }
 
-        Map<Integer, Character> secondMap = new TreeMap<>();
-        secondMap.put(1, 'a');
-        secondMap.put(2, 'b');
-        secondMap.put(3, 'c');
+        // compareTo()
+//        String str1 = "b";
+//        String str2 = "a";
+//        String str3 = "c";
+//        System.out.println(str1.compareTo(str2)); // Compares alphabetic position
+//        System.out.println(str1.compareTo(str3));
 
-        for (char i : secondMap.values()) {
-            System.out.println(i); // printed in order (TreeMap)
-        }
+        // strip()
+//        String str = "   .eliminate whitespace.  .  ";
+//        System.out.println(str.strip());
 
+        // valueOf()
+        char[] charArr = {'h', 'e', 'l', 'l', 'o'};
+        System.out.println(String.valueOf(charArr)); // "hello"
     }
-
 }

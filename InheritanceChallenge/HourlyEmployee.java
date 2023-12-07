@@ -1,8 +1,6 @@
-package InheritanceChallenge;
-
 public class HourlyEmployee {
-    
-    protected double hourlyPayRate;
+
+    private double hourlyPayRate;
 
     public HourlyEmployee() {
         this(50.00);

@@ -3,7 +3,25 @@
   <component name="NewModuleRootManager" inherit-compiler-output="true">
     <exclude-output />
     <content url="file://$MODULE_DIR$">
-      <sourceFolder url="file://$MODULE_DIR$" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ClassesChallenge" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ClassesPart1" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ConstructorChallenge" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Extra" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/HelloWorld" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/IfKeywordAndCodeBlocks" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Inheritance" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/InheritanceChallenge" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/IntelliJHelloWorld/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/KeywordsAndExpressions" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/MethodOverloading" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ReadingUserInput" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/RecordProject" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/StatementsWhiteSpaceAndIndenting" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Switch" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/TheForLoop" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/TheObjectClass" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ThePrimeNumberChallenge" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/WhileLoop" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

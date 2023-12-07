@@ -1,10 +1,8 @@
-package InheritanceChallenge;
-
 public class Worker extends Employee {
     
-    protected String name;
-    protected String birthDate;
-    protected String endDate;
+    public String name;
+    public String birthDate;
+    public String endDate;
 
     public Worker(long employeeId, String hireDate, String name, String birthDate, String endDate) {
         super(employeeId, hireDate);
@@ -21,7 +19,7 @@ public class Worker extends Employee {
         this.endDate = endDate;
     }
 
-    protected int getAge() {
+    public int getAge() {
 
         String birthYearStr = birthDate.substring(6,10);
         int birthYear = Integer.parseInt(birthYearStr);
@@ -30,14 +28,14 @@ public class Worker extends Employee {
         return currentYear - birthYear;
     }
 
-    protected double collectPay() {
+    public double collectPay() {
         
         double pay = annualSalary / 52;
 
         return pay;
     }
 
-    protected void terminate(String endDate) {
+    public void terminate(String endDate) {
 
         this.endDate = endDate;
         System.out.println(name + " is terminated on " + this.endDate);

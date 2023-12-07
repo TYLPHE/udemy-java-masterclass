@@ -1,6 +1,4 @@
-package InheritanceChallenge;
-
-public class Main {
+class InheritanceChallenge {
     public static void main(String[] args) {
 
         System.out.println(Integer.parseInt("10/18/1987".substring(6,10)));
