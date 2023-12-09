@@ -45,20 +45,22 @@ public class Meal {
 
     public void checkout() {
         System.out.println("Order:");
-        System.out.printf("Burger: %s%n", burger.getBurger());
+        System.out.printf("Burger: %10s%n", burger.getBurger());
         if (!burger.getSides().isEmpty()) {
             for (String side : burger.getSides()) {
-                System.out.println("  w/ " + side);
+                System.out.printf("%16s%n", side);
+//                System.out.println("  w/ " + side);
             }
         } else {
             System.out.println("Sides: N/A");
         }
-        System.out.println("Side: " + side.getSide());
-        System.out.println("Drink: " + drink.getSize() + " " + drink.getDrink());
+        System.out.printf("Side: %12s%n", side.getSide());
+//        System.out.println("Side: " + side.getSide());
+        System.out.printf("Drink: %11s%n", drink.getSize() + " " + drink.getDrink());
+//        System.out.println("Drink: " + drink.getSize() + " " + drink.getDrink());
 
         burger.checkout();
         total += burger.getPrice() + drink.getPrice() + side.getPrice();
-
-        System.out.println("total = " + total);
+        System.out.println("TOTAL = " + total);
     }
 }
