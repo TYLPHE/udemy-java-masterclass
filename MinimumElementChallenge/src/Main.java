@@ -11,6 +11,9 @@ public class Main {
         int[] numbers = readIntegers(s);
         System.out.println("numbers = " + Arrays.toString(numbers));
         System.out.println("Minimum number: " + minValue(numbers));
+        System.out.println(Arrays.toString(numbers));
+        reverse(numbers);
+        System.out.println(Arrays.toString(numbers));
     }
 
     private static int[] readIntegers(String s) {
@@ -39,5 +42,22 @@ public class Main {
         }
 
         return min;
+    }
+
+    private static void reverse(int[] nums) {
+        // Modify array to be reversed
+        int temp;
+        boolean swapped = true;
+        while (swapped) {
+            swapped = false;
+            for (int i = 0; i < nums.length - 1; i += 1) {
+                if (nums[i] < nums[i + 1]) {
+                    temp = nums[i];
+                    nums[i] = nums[i + 1];
+                    nums[i + 1] = temp;
+                    swapped = true;
+                }
+            }
+        }
     }
 }
